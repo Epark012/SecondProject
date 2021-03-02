@@ -257,17 +257,14 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/PackageCache/com.unity.render-pipelines.core@7.5.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/PackageCache/com.unity.render-pipelines.core@7.5.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -624,64 +621,64 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/B0208/Documents/GitHub/SecondProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/B0202/Documents/GitHub/SecondProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
