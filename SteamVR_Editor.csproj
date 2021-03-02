@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{509A42FE-EC4E-FCF8-477F-FECE7A7CA12D}</ProjectGuid>
+    <ProjectGuid>{63A2B068-3B0D-2C68-702E-4168D490B6D0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>SteamVR_Editor</AssemblyName>
@@ -271,13 +271,13 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/PackageCache/com.unity.render-pipelines.core@7.5.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/PackageCache/com.unity.render-pipelines.core@7.5.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/unityffolfder/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -634,21 +634,21 @@
       <HintPath>D:/unityffolfder/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SteamVR.csproj">
-      <Project>{21A926D1-4327-8328-EE26-E9B4FC0E0134}</Project>
+      <Project>{61FC34B0-D309-BDCB-8301-D2DA17DFC032}</Project>
       <Name>SteamVR</Name>
     </ProjectReference>
   </ItemGroup>

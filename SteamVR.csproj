@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{21A926D1-4327-8328-EE26-E9B4FC0E0134}</ProjectGuid>
+    <ProjectGuid>{61FC34B0-D309-BDCB-8301-D2DA17DFC032}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>SteamVR</AssemblyName>
@@ -457,10 +457,10 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/PackageCache/com.unity.render-pipelines.core@7.5.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/PackageCache/com.unity.render-pipelines.core@7.5.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/unityffolfder/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -817,15 +817,15 @@
       <HintPath>D:/unityffolfder/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
-      <Project>{1EF1B0B9-8DB6-8433-5E56-F43B0D85DFDA}</Project>
+      <Project>{2E59F4B8-2B1C-499E-3F07-9A248AE7B118}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
     </ProjectReference>
   </ItemGroup>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3489176F-3835-68E6-5B4D-8CF8DC8E9D2D}</ProjectGuid>
+    <ProjectGuid>{12D86537-BB30-79D9-667E-2A2DFBF78514}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Grabbable.cs" />
     <Compile Include="Assets\Scripts\Grip.cs" />
     <Compile Include="Assets\Scripts\HandleRotate.cs" />
+    <Compile Include="Assets\Scripts\MirrorCamera.cs" />
     <Compile Include="Assets\Scripts\Patrol.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\RocketDirection.cs" />
@@ -286,7 +287,7 @@
       <HintPath>D:/unityffolfder/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/unityffolfder/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -643,81 +644,81 @@
       <HintPath>D:/unityffolfder/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/unityffolfder/SecondProject-master/SecondProject-master/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/unityffolfder/Circus_Project/SecondProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
-      <Project>{9C568A5E-DAD9-002A-9EA9-1FE0E9CA291F}</Project>
+      <Project>{2913C42E-4D01-B6D0-7328-3A0E07EBF7A6}</Project>
       <Name>SteamVR_Input_Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{509A42FE-EC4E-FCF8-477F-FECE7A7CA12D}</Project>
+      <Project>{63A2B068-3B0D-2C68-702E-4168D490B6D0}</Project>
       <Name>SteamVR_Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR.csproj">
-      <Project>{21A926D1-4327-8328-EE26-E9B4FC0E0134}</Project>
+      <Project>{61FC34B0-D309-BDCB-8301-D2DA17DFC032}</Project>
       <Name>SteamVR</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
-      <Project>{1EF1B0B9-8DB6-8433-5E56-F43B0D85DFDA}</Project>
+      <Project>{2E59F4B8-2B1C-499E-3F07-9A248AE7B118}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
     </ProjectReference>
   </ItemGroup>
