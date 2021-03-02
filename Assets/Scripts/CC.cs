@@ -66,7 +66,7 @@ public class CC : MonoBehaviour
     public float throttle; // 뒷바퀴
     public float steer; // 앞바퀴 
     public float s;
-    public int previousGear = 0;
+    //public int previousGear = 0;
     public bool l;
     public bool brake;
     public bool drift;
@@ -85,25 +85,20 @@ public class CC : MonoBehaviour
     bool isSetting;
     bool isInstantiated;
 
-
-
     void Awake()
     {
         //복제본 배열의 길이를 휠 갯수로 설정 (드리프트 시각화)
         driftEffectClone = new GameObject[wheelinfo.AllWheel.Length];
     }
 
-
-
     IEnumerator Start()
     {
         rb = GetComponent<Rigidbody>();
 
-        if (CM)
+       /* if (CM)
         {
             rb.centerOfMass = CM.position;
-        }
-
+        }*/
 
         //시동 버튼을 눌렀으며, 초기 세팅이 되지 않았다면 실행
         if (!isSetting && Input.GetButtonDown("CarStart"))
@@ -118,8 +113,6 @@ public class CC : MonoBehaviour
             //시동 값을 true로 설정
             isStart = true;
         }
-
-
     }
 
     void Update()
@@ -165,7 +158,6 @@ public class CC : MonoBehaviour
                 UpdateWheelVisual(wheel.transform.GetChild(0), wheel);
             }
         }
-
     }
     public void WheelControl()
     {
@@ -220,7 +212,7 @@ public class CC : MonoBehaviour
     }
 
     //휠 센터 좌표 설정
-    void WheelCenterSetting()
+    /*void WheelCenterSetting()
     {
         //모든 휠 제어
         foreach (WheelCollider wheel in wheelinfo.AllWheel)
@@ -228,7 +220,7 @@ public class CC : MonoBehaviour
             //해당 휠의 자식 오브젝트의 로컬 좌표를 센터 좌표로 설정
             wheel.center = wheel.transform.GetChild(0).transform.localPosition;
         }
-    }
+    }*/
     public virtual void LightControl()
     {
         l = Input.GetKeyDown(KeyCode.L); //라이트 기능
@@ -374,6 +366,4 @@ public class CC : MonoBehaviour
             driftEffectClone[i].transform.position = wheelinfo.AllWheel[i].transform.GetChild(0).transform.position + new Vector3(0, -0.25f, 0);
         }
     }
-
-
 }
