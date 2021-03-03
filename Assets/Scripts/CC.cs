@@ -271,11 +271,11 @@ public class CC : MonoBehaviour
         //평균 마찰력이 일정 수치 미만이라면 드리프트 음향 효과 실행
         if (FrictionAverage < wheelinfo.whenDrift)
         {
-            CarSoundEffect(audioinfo.audio[1], SoundType.Drift); //'음향 및 시각 효과 구현' 파트에서 설명할 예정
+            CarSoundEffect(audioinfo.audio[1], SoundType.Drift);// A시동집합/B악셀집합/C드리프트집합/ A와B는 공집합. A와 C는 공집합. B와 C는 공집합 아님.(동시 진행가능) -컴포넌트 2개로 나눈 이유
         }
 
         //드리프트 시각 효과 실행
-        CarDrivingEffect(FrictionAverage); //'음향 및 시각 효과 구현' 파트에서 설명할 예정
+        CarDrivingEffect(FrictionAverage); 
     }
     void CarSoundEffect(AudioSource audio, SoundType type)
     {
