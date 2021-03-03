@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 // 길 정보를 이용해서 순서대로 목적지를 순회하고싶다.
 // 태어날 때 최초 목적지를 결정하고 agent를 이용해서 알려주고싶다.
-public class TestDrone: MonoBehaviour
+public class TestDrone : MonoBehaviour
 {
     // - 순서 
     int wayIndex;
@@ -14,7 +14,8 @@ public class TestDrone: MonoBehaviour
     // - agent
     NavMeshAgent nav;
     GameObject player;
-    public GameObject target;
+    public GameObject firePoint;
+    Transform target;
     public GameObject MakeDir;
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class TestDrone: MonoBehaviour
 
         nav = GetComponent<NavMeshAgent>();
         wayIndex = Random.Range(0, PathManager.instance.trn.Length);
-        Transform target = PathManager.instance.trn[wayIndex];
+        target = PathManager.instance.trn[wayIndex];
         // 태어날 때 최초 목적지를 결정하고 agent를 이용해서 알려주고싶다.
         //nav.destination = target.position;
         nav.stoppingDistance = 3;
@@ -64,6 +65,7 @@ public class TestDrone: MonoBehaviour
             // 순찰상태로 전이하고싶다. 목적지를 순찰지로 변경하고싶다.
             state = State.Patrol;
             nav.destination = PathManager.instance.trn[wayIndex].position;
+            print("범위벗어남");
         }
     }
     GameObject DroneClone;
@@ -71,7 +73,7 @@ public class TestDrone: MonoBehaviour
     {
         // 목적지를 향해 계속 이동하고싶다.
         //nav.destination = player.transform.position;
-        transform.position = Vector3.Lerp(transform.position, target.transform.position, 0.005f);
+        transform.position = Vector3.Lerp(transform.position, player.transform.position, 0.005f);
         if (count == 1)
         {
             GameObject DroneDir = Instantiate(MakeDir);
@@ -79,9 +81,10 @@ public class TestDrone: MonoBehaviour
             Transform PlayerTr = player.GetComponent<Transform>();
             DroneDir.transform.position = Vector3.Lerp(DroneDir.transform.position, player.transform.position, 0.005f);
             DroneClone = DroneDir;
-
+            print("목표발견");
             count++;
         }
+        DroneAttack();
         DroneClone.transform.position = player.transform.position;
         transform.LookAt(DroneClone.transform.position);
     }
@@ -119,5 +122,32 @@ public class TestDrone: MonoBehaviour
             nav.destination = PathManager.instance.trn[wayIndex].position;
         }
         // 3. agent에게 목적지를 알려주고싶다.
+    }
+    float timer = 0;
+    public GameObject bulletFactory;
+    public void DroneAttack()
+    {
+
+        timer += Time.deltaTime;
+        if (timer > 1.5f)
+        {
+            int layer = 1 << LayerMask.NameToLayer("Player");
+            Collider[] cols = Physics.OverlapSphere(transform.position, 20f, layer);
+            if (cols.Length > 0)
+            {
+                GameObject bullet = Instantiate(bulletFactory);
+                bullet.transform.position = firePoint.transform.position;
+                Vector3 dir = cols[0].gameObject.transform.position - bullet.transform.position;
+                bullet.GetComponent<Bullet>().GoToTarget(dir);
+                Destroy(bullet, 3f);
+            }
+
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    bullet.transform.position = Vector3.Lerp(bullet.transform.position, MakeDir.transform.position, 0.5f);
+            //}
+            timer = 0;
+
+        }
     }
 }
