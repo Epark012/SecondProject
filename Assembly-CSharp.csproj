@@ -67,6 +67,7 @@
     <Compile Include="Assets\Assetstore\WorldSkies\Demo\Scripts\LookCamera.cs" />
     <Compile Include="Assets\Assetstore\WorldSkies\Demo\Scripts\SkyboxChanger.cs" />
     <Compile Include="Assets\Scripts\AntiRollBar.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CC.cs" />
     <Compile Include="Assets\Scripts\CameraManager.cs" />
     <Compile Include="Assets\Scripts\DroneAi.cs" />
@@ -74,11 +75,12 @@
     <Compile Include="Assets\Scripts\Grabbable.cs" />
     <Compile Include="Assets\Scripts\Grip.cs" />
     <Compile Include="Assets\Scripts\HandleRotate.cs" />
-    <Compile Include="Assets\Scripts\MirrorCamera.cs" />
+    <Compile Include="Assets\Scripts\PathManager.cs" />
     <Compile Include="Assets\Scripts\Patrol.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\RocketDirection.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\TestDrone.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\Updown.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
