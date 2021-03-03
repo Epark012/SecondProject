@@ -25,7 +25,7 @@ public class TestDrone: MonoBehaviour
         wayIndex = Random.Range(0, PathManager.instance.trn.Length);
         Transform target = PathManager.instance.trn[wayIndex];
         // 태어날 때 최초 목적지를 결정하고 agent를 이용해서 알려주고싶다.
-        nav.destination = target.position;
+        //nav.destination = target.position;
         nav.stoppingDistance = 3;
 
         // 태어날 때 추적 상태로 하고싶다.
