@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 //우회전을 할 때 더 많은 힘을 주는 안티롤 바?는 이 힘을 받아 전달 . 아래쪽으로 힘을 가함. 상승하는 힘이 맞을 것으로 차를 안정하는데 도움을 줌 반대방향으로 타이어 힘 생성
 //땅에 차가 잘 붙어있게 함.
 [System.Serializable]
@@ -85,6 +86,10 @@ public class CC : MonoBehaviour
     bool isSetting;
     bool isInstantiated;
 
+    public SteamVR_Action_Boolean grip;
+    public SteamVR_Input_Sources brakeLeftTrigger;
+    public SteamVR_Input_Sources brakeRightTrigger;
+    public SteamVR_Input_Sources accelerator;
     void Awake()
     {
         //복제본 배열의 길이를 휠 갯수로 설정 (드리프트 시각화)
@@ -163,14 +168,15 @@ public class CC : MonoBehaviour
     {
         throttle = Input.GetAxis("Vertical");
         steer = Input.GetAxis("Horizontal");
-        brake = Input.GetKey(KeyCode.Space); 
-
+        //brake = Input.GetKey(KeyCode.Space); 
+        brake=grip.GetStateDown(brakeLeftTrigger)|| Input.GetKey(KeyCode.Space);
         foreach (WheelCollider wheel in throttlewheels)
         {
             if (brake)
             {
                 wheel.motorTorque = 0f;
                 wheel.brakeTorque = brakeStrength * Time.deltaTime;
+                print("브레이크");
             }
             else
             {
@@ -190,7 +196,7 @@ public class CC : MonoBehaviour
             mesh.transform.Rotate(rb.velocity.magnitude * (transform.InverseTransformDirection(rb.velocity).z >= 0 ? 1 : -1) / (2 * Mathf.PI * 0.33f), 0f, 0f); //x축은 앞으로 가는 회전 방향 #3 
         }
 
-        if (Input.GetKey(KeyCode.LeftShift)) // accel 기능
+        if (Input.GetKey(KeyCode.LeftShift)||grip.GetState(accelerator)) // accel 기능
         {
             s = strengthCoefficient * 10f;
         }
